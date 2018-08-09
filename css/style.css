@@ -85,9 +85,16 @@ p{
 ----------------*/
 .footer-navbar{
   display: block;
-  float: left;
 }
 
+.footer-navbar p{
+  float: left;
+  padding: 1em 0px 1em 1em;
+}
+.footer-navbar a{
+  float: right;
+  padding: 1em 1em 1em 0px;
+}
 /*-----------------
     MEDIA QUERIES
 ------------------*/
