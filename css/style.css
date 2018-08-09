@@ -25,13 +25,13 @@ img {
   display: block;
   height: auto;
   margin: auto;
-}
+  padding: 2em 0px 0em 0px;}
 
 p{
   display: block;
   height: auto;
   margin: auto;
-  max-width: 90%;
+  max-width: 70%;
 }
 
 
@@ -45,17 +45,15 @@ p{
 }
 
 .menu li {
-  border-right: 1px solid #9B9A9A;
-  float: left;
-  list-style: none outside none;
-  padding-left: 5px;
-  padding-right: 5px;
+  border: 1px solid #9B9A9A;
+  padding: 5px 0px 5px 6px;
   width: auto;
 }
-
-.portfolio{
-  text-align: center;
+.menu img{
+  padding: 2em 0px 2em 0px;
 }
+
+
 
 
 /*-----------------
@@ -66,15 +64,29 @@ p{
 /*-----------------
   PORTFOLIO SECTION
 -----------------*/
+.portfolio{
+  text-align: -webkit-center;
+  padding: 5em 0px 2em 0px;
+}
 
 
 /*----------------
  FOOTER - CONTACT
 ----------------*/
+.contact{
+  text-align: center;
+  padding: 5em 0px 2em 0px;
+}
+.contact p{
+  padding: 1em 0px 1em 0px;
+}
 /*---------------
  FOOTER - NAVBAR
 ----------------*/
-
+.footer-navbar{
+  display: block;
+  float: left;
+}
 
 /*-----------------
     MEDIA QUERIES
