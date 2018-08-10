@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #fafafa;
+  background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   font-family: "Source Sans Pro", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -26,7 +26,7 @@ img {
   display: block;
   height: auto;
   margin: auto;
-  padding: 2em 0px 0em 0px;
+  padding: 2em 0px 1em 0px;
 width: 80%;}
 
 p{
@@ -34,7 +34,7 @@ p{
   height: auto;
   margin: auto;
   max-width: 70%;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 
@@ -94,9 +94,15 @@ p{
   float: left;
   padding: 1em 0px 1em 1em;
 }
-.footer-navbar a{
+.link2 a{
   float: right;
   padding: 1em 1em 1em 0px;
+}
+.link{
+  display: none;
+}
+.name{
+  float: none;
 }
 /*-----------------
     MEDIA QUERIES
@@ -104,5 +110,117 @@ p{
 
 @media (min-width: 768px) {
 
+
+.main-nav{
+  padding: 0.7em;
+  text-align: center;
+  margin: 0.5em;
+  display: inline-block;
+}
+/* .name{
+  float: left;
+} */
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+  }
+
+  img {
+    max-width: 50%;
+    display: inline-block;
+    height: auto;
+    margin: 0 auto;
+    padding: 2em 0px 0em 0px;
+    vertical-align: top;
+  }
+
+  p{
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 70%;
+    font-size: 1.5em;
+  }
   
+  .col{
+    display: inline-table;
+    width: 49%;
+    margin-top: 0;
+    overflow: hidden;
+    float:none;
+  }
+
+  .col,
+  .portfolio {
+    margin: 0 auto;
+  }
+
+  .profile{
+    display: inline-block;
+    padding: 1em 1em 1em 0px;
+  }
+  .profile img{
+    float: right;
+    width: 30%;
+  }
+  .profile p{
+    width: 70%;
+    float: left;
+    margin-top: 2em;
+   }
+ .wrap{
+   margin: 5%;
+ }
+
+ img {
+  max-width: 100%;
+  display: block;
+  height: 70%;
+  margin: auto;
+  width: 96%;}
+
+.link2{
+  display: none;
+}
+.link{
+  display: block;
+}
+.link li{
+  display: inline;
+  float: right;
+  padding: 8px;
+  padding-right: 4%;
+  font-size: smaller;
+}
+}
+@media (min-width: 1024px) {
+
+  .wrap {
+      width: 90%;
+  }
+  .menu
+  .name{
+    float: left;
+  }
+  .main-nav{
+    float: right;
+    
+  }
+.main-nav li{
+  float: left;
+  display: inline-block;
+}
+.col{
+  display: inline-table;
+  width: 33%;
+  margin-top: 0;
+  overflow: hidden;
+  float: left;
+}
+
+.contact{
+  margin: 5em 0px 2em 0px;
+  padding-top: 1300px;
+}
 }
